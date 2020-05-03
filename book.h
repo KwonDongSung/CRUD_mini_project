@@ -21,4 +21,4 @@ int loadbook(Book *b);
 void searchbyname(Book *b, int count);
 void searchbyauthor(Book *b, int count);
 void searchbystar(Book *b, int count);
-int chooseby();
+void chooseby(Book *b, int count);
