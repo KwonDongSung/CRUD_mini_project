@@ -12,7 +12,7 @@ typedef struct{
 int addbook(Book *b);
 void readbook(Book b);
 int updatebook(Book *b);
-int deleteproduct(Book *b);
+int deletebook(Book *b);
 int selectMenu();
 void listbook(Book *b, int count);
 int selectdatano(Book *b, int count);
