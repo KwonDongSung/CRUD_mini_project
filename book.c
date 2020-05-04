@@ -59,3 +59,9 @@ scanf("%d",&b->star);
 printf("=> 추가됨!\n");
 return 1;
 }
+
+int deletebook(Book *b){
+b -> price = -1;
+b -> star = -1;
+printf("=>삭제됨!!\n");
+}
