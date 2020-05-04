@@ -1,0 +1,4 @@
+*.o
+*.txt
+bookstore
+bookstore_debug
