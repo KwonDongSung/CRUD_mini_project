@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "book.h"
 
 #define MAX 100
@@ -15,11 +13,13 @@ int main(){
 		menu = selectMenu();
 		switch (menu){
 			case 1:
+				if(count>0)
 				listbook(book,count);
+				else 
+				printf("데이터가 없습니다");
 				break;
-	
 			case 2:
-				addbook(&book[count]);
+				count+= addbook(&book[count]);
 				break;
 	
 			case 3:
