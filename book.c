@@ -65,3 +65,23 @@ b -> price = -1;
 b -> star = -1;
 printf("=>삭제됨!!\n");
 }
+
+int selectdatano(Book *b, int count){
+int num ;
+listbook(b, count);
+printf ("번호는 (취소:0)?");
+scanf("%d" ,&num);
+return num;
+}
+
+void listbook(Book *b, int count){
+for (int i = 0 ; i<count ; i++){
+        if(b[i].price == -1) continue;
+        printf("%d번 상품 ", i+1);
+        readbook(b[i]);
+	printf("-----------------");
+        printf("\n");
+}
+printf ("\n");
+}
+
