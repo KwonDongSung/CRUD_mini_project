@@ -33,8 +33,8 @@ return 1;
 
 void readbook(Book b){
 printf("\n%s\n", b.name);
-printf("%s원\n",b.genre);
-printf("%s원\n",b.author);
+printf("%s\n",b.genre);
+printf("%s\n",b.author);
 printf("%d원\n",b.price);
 for(int i=1;i<=b.star;i++){
 printf("★");
