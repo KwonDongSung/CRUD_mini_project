@@ -38,9 +38,9 @@ int main(){
 				savebook(book,count);
 				break;
 
-//			case 6:
-//				chooseby(book,count);
-//				break;
+			case 6:
+				chooseby(book,count);
+				break;
 
 			case 0:
 				printf("프로그램을 종료합니다.\n");
