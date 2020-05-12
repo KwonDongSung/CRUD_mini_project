@@ -32,21 +32,4 @@ void savebook(Book *b, int count){
 	fclose(fp);
 }
 
-void searchbystar(Book *b, int count){
-    int scount = 0;
-    int star;
-    printf("원하는 별점은? ");
-    scanf("\n %d", &star);
-    for (int i=0; i<count; i++){
-        if(b[i].price != -1){
-if (b[i].star ==  star){
-                printf("%d번 상품 ",i+1);
-                readproduct(b[i]);
-                scount++;
-            }
-        }
-    }
-    if(scount == 0)printf("=> 검색된 데이터 없음!");
-    printf("\n");
-}
 
