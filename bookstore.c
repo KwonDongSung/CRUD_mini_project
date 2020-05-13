@@ -16,7 +16,7 @@ int main(){
 				if(count>0)
 				listbook(book,count);
 				else 
-				printf("데이터가 없습니다");
+				printf("데이터가 없습니다!!\n");
 				break;
 			case 2:
 				count+= addbook(&book[count]);
